@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="frb" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#E9ECEF"/><stop offset="50%" stop-color="#F8F9FA"/><stop offset="100%" stop-color="#DEE2E6"/></linearGradient>
+    <filter id="frsh"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.2"/></filter>
+  </defs>
+  <g filter="url(#frsh)">
+    <rect x="60" y="168" width="14" height="8" rx="2" fill="#343A40"/>
+    <rect x="126" y="168" width="14" height="8" rx="2" fill="#343A40"/>
+    <rect x="52" y="36" width="96" height="134" rx="12" fill="url(#frb)" stroke="#CED4DA" stroke-width="2"/>
+    <rect x="55" y="40" width="90" height="38" rx="8" fill="#FFF" stroke="#E9ECEF" stroke-width="1.5"/>
+    <rect x="134" y="50" width="5" height="18" rx="2.5" fill="#495057"/>
+    <rect x="55" y="82" width="90" height="84" rx="8" fill="#FFF" stroke="#E9ECEF" stroke-width="1.5"/>
+    <rect x="134" y="94" width="5" height="32" rx="2.5" fill="#495057"/>
+    <circle cx="102" cy="118" r="10" fill="#FF6B6B"/>
+    <text x="102" y="122" font-family="sans-serif" font-weight="900" font-size="8" fill="#FFF" text-anchor="middle">LPU</text>
+  </g>
+</svg>

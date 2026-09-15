@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login / Sign Up - PASH.IT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body class="auth-body">
+  <header class="auth-header">
+    <a class="header-brand" href="index.html" aria-label="Back to PASH.IT home">
+      <span class="brand-mark">P</span>
+      <span>PASH.IT</span>
+    </a>
+  </header>
+
+  <main class="auth-page">
+    <section class="auth-shell" aria-label="PASH.IT account access">
+      <div class="auth-copy">
+        <p class="auth-badge">Verified campus access</p>
+        <h1>Login or join<br />PASH.IT</h1>
+        <p>
+          Buy, sell, and swap with LPU students. Keep deals on campus,
+          chat directly, and manage your listings from one place.
+        </p>
+
+        <div class="auth-trust-grid" aria-label="Account benefits">
+          <span>LPU verified</span>
+          <span>Campus deals</span>
+          <span>Direct chat</span>
+        </div>
+      </div>
+
+      <section class="auth-card">
+        <div class="auth-tabs" role="tablist" aria-label="Choose account action">
+          <button class="active" type="button" data-auth-mode="login" aria-selected="true">Login</button>
+          <button type="button" data-auth-mode="signup" aria-selected="false">Sign Up</button>
+        </div>
+
+        <form class="auth-form active" id="loginForm" onsubmit="return false;">
+          <h2>Welcome back</h2>
+          <p>Enter your LPU email or registration number, then password.</p>
+
+          <div class="login-method-field active">
+            <label for="loginIdentifier">LPU Email / Reg. No.</label>
+            <input id="loginIdentifier" type="text" placeholder="name@lpu.in or registration no." />
+          </div>
+
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" type="password" placeholder="Enter password" required />
+
+          <div class="auth-row">
+            <label class="auth-check">
+              <input type="checkbox" />
+              <span>Remember me</span>
+            </label>
+            <a href="#" id="forgotPasswordLink">Forgot password?</a>
+          </div>
+
+          <button class="auth-submit" type="submit">Login</button>
+        </form>
+
+        <form class="auth-form" id="signupForm" onsubmit="return false;">
+          <h2>Create account</h2>
+          <p>Use your campus details so we can keep PASH.IT student-only.</p>
+
+          <label for="signupName">Full name</label>
+          <input id="signupName" type="text" placeholder="Your name" required />
+
+          <label for="signupEmail">LPU email</label>
+          <input id="signupEmail" type="email" placeholder="name@lpu.in" required />
+
+          <label for="signupRegNo">Registration number</label>
+          <input id="signupRegNo" type="text" placeholder="University registration no." required />
+
+          <label for="signupHostel">Hostel / block</label>
+          <input id="signupHostel" type="text" placeholder="BH-3, Girls Hostel, Day Scholar..." required />
+
+          <label for="signupPassword">Password</label>
+          <input id="signupPassword" type="password" placeholder="Create password" required />
+
+          <button class="auth-submit" type="submit">Create account</button>
+        </form>
+
+        <p class="auth-note" id="authMessage" role="status"></p>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="js/sb-client.js"></script>
+  <script src="js/auth.js"></script> <!-- only on login/signup pages -->
+  <script src="js/login.js"></script>
+</body>
+</html>

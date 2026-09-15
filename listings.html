@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Listings - PASH.IT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/listings.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="all-listings-body">
+  <header class="all-listings-header">
+    <a class="header-brand" href="index.html" aria-label="Back to PASH.IT home">
+      <span class="brand-mark">P</span>
+      <span>PASH.IT</span>
+    </a>
+    <nav class="all-listings-nav" aria-label="Listings navigation">
+      <a href="sell.html" class="sell-btn">+ Sell</a>
+      <a href="wishlist.html">Wishlists <span id="wishCount">0</span></a>
+      <a href="login.html" id="authLink">Login / Sign Up</a>
+    </nav>
+  </header>
+
+  <main class="all-listings-page">
+    <section class="all-listings-shell">
+      <header class="all-listings-title-row">
+        <div>
+          <p class="listing-eyebrow">LPU Marketplace</p>
+          <h1>All Listings</h1>
+          <p class="listing-count" id="listingCount">Loading listings...</p>
+        </div>
+
+        <form class="all-listings-search" id="allListingsSearch" role="search">
+          <input id="allListingsInput" type="search" placeholder="Search all listings..." aria-label="Search all listings" />
+          <button type="submit">Search</button>
+          <button type="button" id="allListingsClear">Clear</button>
+        </form>
+      </header>
+
+      <div class="listings-grid all-listings-grid" id="allListingsGrid"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="js/sb-client.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/listings.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

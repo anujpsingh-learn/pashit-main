@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wishlist - PASH.IT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/wishlist.css" />
+</head>
+<body class="wishlist-body">
+  <header class="wishlist-header">
+    <a class="header-brand" href="index.html" aria-label="Back to PASH.IT home">
+      <span class="brand-mark">P</span>
+      <span>PASH.IT</span>
+    </a>
+    <nav class="wishlist-nav" aria-label="Wishlist navigation">
+      <a href="sell.html" class="sell-btn">+ Sell</a>
+      <a href="index.html#latest-listings">Browse listings</a>
+      <a href="login.html" id="authLink">Login / Sign Up</a>
+    </nav>
+  </header>
+
+  <main class="wishlist-page">
+    <section class="wishlist-shell">
+      <div class="wishlist-title-row">
+        <div>
+          <p class="wishlist-badge">Saved products</p>
+          <h1>Your wishlist</h1>
+        </div>
+        <span class="wishlist-count" id="wishlistCount">0 items</span>
+      </div>
+
+      <div class="wishlist-empty" id="wishlistEmpty">
+        <h2>No saved products yet</h2>
+        <p>Tap Save on any listing and it will appear here.</p>
+        <a href="index.html#latest-listings">Find products</a>
+      </div>
+
+      <div class="wishlist-grid" id="wishlistGrid"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="js/sb-client.js"></script>
+  <script src="js/auth.js"></script> <!-- only on login/signup pages -->
+  <script src="js/wishlist.js"></script>
+</body>
+</html>

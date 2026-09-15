@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#343A40"/><stop offset="100%" stop-color="#1A1D20"/></linearGradient>
+    <filter id="chsh"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.2"/></filter>
+  </defs>
+  <g filter="url(#chsh)">
+    <line x1="100" y1="165" x2="58" y2="175" stroke="#495057" stroke-width="5" stroke-linecap="round"/>
+    <line x1="100" y1="165" x2="142" y2="175" stroke="#495057" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="56" cy="177" r="5" fill="#212529"/>
+    <circle cx="144" cy="177" r="5" fill="#212529"/>
+    <circle cx="100" cy="182" r="5" fill="#212529"/>
+    <rect x="96" y="125" width="8" height="42" rx="2" fill="#ADB5BD"/>
+    <rect x="58" y="112" width="84" height="18" rx="8" fill="url(#chg)"/>
+    <path d="M68 40 C68 32 78 30 100 30 C122 30 132 32 132 40 L130 106 C130 110 125 112 100 112 C75 112 70 110 70 106 Z" fill="none" stroke="#212529" stroke-width="6"/>
+    <path d="M72 44 C72 38 80 36 100 36 C120 36 128 38 128 44 L126 104 C126 106 120 108 100 108 C80 108 74 106 74 104 Z" fill="#845EF7" fill-opacity="0.85"/>
+    <rect x="76" y="80" width="48" height="10" rx="5" fill="#5F3DC4"/>
+    <path d="M52 82 L64 82 L64 112" fill="none" stroke="#212529" stroke-width="5" stroke-linecap="round"/>
+    <path d="M148 82 L136 82 L136 112" fill="none" stroke="#212529" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

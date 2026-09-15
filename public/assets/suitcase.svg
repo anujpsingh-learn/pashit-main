@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="scb" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FAB005"/><stop offset="100%" stop-color="#F59F00"/></linearGradient>
+    <filter id="scsh"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.2"/></filter>
+  </defs>
+  <g filter="url(#scsh)">
+    <line x1="84" y1="20" x2="84" y2="60" stroke="#868E96" stroke-width="4"/>
+    <line x1="116" y1="20" x2="116" y2="60" stroke="#868E96" stroke-width="4"/>
+    <rect x="76" y="16" width="48" height="10" rx="5" fill="#343A40"/>
+    <circle cx="68" cy="176" r="6" fill="#212529"/>
+    <circle cx="132" cy="176" r="6" fill="#212529"/>
+    <rect x="54" y="55" width="92" height="116" rx="14" fill="url(#scb)"/>
+    <rect x="64" y="72" width="72" height="6" rx="3" fill="#E67700"/>
+    <rect x="64" y="90" width="72" height="6" rx="3" fill="#E67700"/>
+    <rect x="64" y="108" width="72" height="6" rx="3" fill="#E67700"/>
+    <rect x="64" y="126" width="72" height="6" rx="3" fill="#E67700"/>
+    <line x1="100" y1="55" x2="100" y2="171" stroke="#D9480F" stroke-width="2" stroke-dasharray="3 2"/>
+    <rect x="138" y="102" width="6" height="14" rx="2" fill="#212529"/>
+  </g>
+</svg>

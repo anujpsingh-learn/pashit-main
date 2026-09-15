@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="b1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FF6B6B"/><stop offset="100%" stop-color="#C92A2A"/></linearGradient>
+    <linearGradient id="b2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4DABF7"/><stop offset="100%" stop-color="#1971C2"/></linearGradient>
+    <linearGradient id="b3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FCC419"/><stop offset="100%" stop-color="#F08C00"/></linearGradient>
+    <linearGradient id="b4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#51CF66"/><stop offset="100%" stop-color="#2B8A3E"/></linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.18"/></filter>
+  </defs>
+  <g filter="url(#sh)">
+    <path d="M30 145 C30 141 34 137 40 137 L165 137 C168 137 170 139 170 142 L170 162 C170 165 168 167 165 167 L40 167 C34 167 30 163 30 159 Z" fill="url(#b1)"/>
+    <rect x="42" y="141" width="123" height="22" rx="3" fill="#FFF9DB" />
+    <path d="M30 145 C30 138 35 137 42 137 L42 167 C35 167 30 166 30 159 Z" fill="#A61E4D"/>
+    <line x1="60" y1="148" x2="155" y2="148" stroke="#E9ECEF" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M38 112 C38 108 42 104 48 104 L158 104 C161 104 163 106 163 109 L163 129 C163 132 161 134 158 134 L48 134 C42 134 38 130 38 126 Z" fill="url(#b2)"/>
+    <rect x="50" y="108" width="108" height="22" rx="3" fill="#F8F9FA" />
+    <path d="M38 112 C38 105 43 104 50 104 L50 134 C43 134 38 133 38 126 Z" fill="#1864AB"/>
+    <line x1="65" y1="115" x2="148" y2="115" stroke="#CED4DA" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M44 80 C44 76 48 72 54 72 L150 72 C153 72 155 74 155 77 L155 96 C155 99 153 101 150 101 L54 101 C48 101 44 97 44 93 Z" fill="url(#b4)"/>
+    <rect x="56" y="75" width="94" height="22" rx="3" fill="#FFF" />
+    <path d="M44 80 C44 73 49 72 56 72 L56 101 C49 101 44 100 44 93 Z" fill="#237032"/>
+    <g transform="rotate(-6 95 55)">
+      <path d="M48 45 C48 41 52 38 58 38 L142 38 C145 38 147 40 147 43 L147 62 C147 65 145 67 142 67 L58 67 C52 67 48 63 48 59 Z" fill="url(#b3)"/>
+      <rect x="58" y="41" width="84" height="22" rx="3" fill="#FFF9DB"/>
+      <path d="M48 45 C48 39 53 38 58 38 L58 67 C53 67 48 66 48 59 Z" fill="#E67700"/>
+      <path d="M125 40 L135 40 L135 75 L130 70 L125 75 Z" fill="#E03131"/>
+    </g>
+  </g>
+</svg>

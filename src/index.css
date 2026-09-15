@@ -1,0 +1,38 @@
+@import "../css/styles.css";
+@import "../css/listings.css";
+@import "../css/login.css";
+@import "../css/profile.css";
+@import "../css/sell.css";
+@import "../css/wishlist.css";
+
+/* App Shell adjustments */
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+}
+
+.sell-nav-btn {
+  background: var(--accent);
+  color: white !important;
+  padding: 8px 18px !important;
+  border-radius: 999px;
+  font-weight: 900;
+  transition: transform 0.2s ease;
+}
+
+.sell-nav-btn:hover {
+  transform: translateY(-2px);
+}
+
+.category-pills-row button {
+  transition: all 0.2s ease;
+}
+
+.category-pills-row button:hover {
+  transform: translateY(-2px);
+}

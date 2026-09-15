@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lb" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFD43B"/><stop offset="100%" stop-color="#F59F00"/></linearGradient>
+    <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFF9DB" stop-opacity="0.8"/><stop offset="100%" stop-color="#FFE066" stop-opacity="0"/></linearGradient>
+    <filter id="lsh"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.18"/></filter>
+  </defs>
+  <g filter="url(#lsh)">
+    <polygon points="56,88 18,175 125,175 88,88" fill="url(#lg)"/>
+    <ellipse cx="140" cy="168" rx="34" ry="10" fill="#343A40"/>
+    <ellipse cx="140" cy="165" rx="32" ry="8" fill="#495057"/>
+    <circle cx="148" cy="164" r="3.5" fill="#FFD43B"/>
+    <line x1="135" y1="165" x2="115" y2="110" stroke="#343A40" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="115" cy="110" r="7" fill="url(#lb)"/>
+    <line x1="115" y1="110" x2="72" y2="82" stroke="#343A40" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="72" cy="82" r="7" fill="url(#lb)"/>
+    <g transform="rotate(35 72 82)">
+      <path d="M50 56 L85 56 L98 84 L37 84 Z" fill="url(#lb)"/>
+      <ellipse cx="67.5" cy="84" rx="30.5" ry="7" fill="#FFF9DB"/>
+      <ellipse cx="67.5" cy="84" rx="20" ry="4" fill="#FFE066"/>
+      <circle cx="67.5" cy="56" r="6" fill="#343A40"/>
+    </g>
+  </g>
+</svg>

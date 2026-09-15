@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fb" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4DABF7"/><stop offset="100%" stop-color="#1971C2"/></linearGradient>
+    <filter id="fsh"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.18"/></filter>
+  </defs>
+  <g filter="url(#fsh)">
+    <ellipse cx="100" cy="172" rx="38" ry="10" fill="#343A40"/>
+    <ellipse cx="100" cy="169" rx="35" ry="8" fill="#495057"/>
+    <circle cx="90" cy="168" r="2.5" fill="#51CF66"/>
+    <circle cx="100" cy="168" r="2.5" fill="#FFD43B"/>
+    <circle cx="110" cy="168" r="2.5" fill="#FF6B6B"/>
+    <rect x="94" y="118" width="12" height="52" rx="4" fill="#868E96"/>
+    <circle cx="100" cy="78" r="54" fill="#E7F5FF" stroke="#339AF0" stroke-width="4"/>
+    <circle cx="100" cy="78" r="44" fill="none" stroke="#A5D8FF" stroke-width="2"/>
+    <line x1="100" y1="24" x2="100" y2="132" stroke="#A5D8FF" stroke-width="1.5"/>
+    <line x1="46" y1="78" x2="154" y2="78" stroke="#A5D8FF" stroke-width="1.5"/>
+    <path d="M100 78 C90 52 110 38 100 34 C90 38 90 56 100 78 Z" fill="url(#fb)"/>
+    <path d="M100 78 C74 88 64 68 60 76 C64 86 80 88 100 78 Z" fill="url(#fb)"/>
+    <path d="M100 78 C120 95 138 82 140 90 C136 98 116 95 100 78 Z" fill="url(#fb)"/>
+    <circle cx="100" cy="78" r="14" fill="#1C7ED6"/>
+    <circle cx="100" cy="78" r="7" fill="#FFF"/>
+  </g>
+</svg>

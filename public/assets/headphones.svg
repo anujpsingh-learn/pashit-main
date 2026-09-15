@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hpg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#343A40"/><stop offset="100%" stop-color="#111827"/></linearGradient>
+    <linearGradient id="hpa" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#845EF7"/><stop offset="100%" stop-color="#5F3DC4"/></linearGradient>
+    <filter id="hps"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.2"/></filter>
+  </defs>
+  <g filter="url(#hps)">
+    <path d="M42 110 C38 60 70 32 100 32 C130 32 162 60 158 110" fill="none" stroke="url(#hpg)" stroke-width="16" stroke-linecap="round"/>
+    <path d="M60 75 C75 48 125 48 140 75" fill="none" stroke="#212529" stroke-width="10" stroke-linecap="round"/>
+    <rect x="36" y="98" width="8" height="24" rx="3" fill="#ADB5BD"/>
+    <rect x="156" y="98" width="8" height="24" rx="3" fill="#ADB5BD"/>
+    <g transform="rotate(8 38 135)">
+      <rect x="22" y="112" width="32" height="52" rx="16" fill="url(#hpg)"/>
+      <rect x="38" y="116" width="14" height="44" rx="7" fill="url(#hpa)"/>
+      <circle cx="32" cy="138" r="8" fill="#212529"/>
+      <circle cx="32" cy="138" r="4" fill="url(#hpa)"/>
+    </g>
+    <g transform="rotate(-8 162 135)">
+      <rect x="146" y="112" width="32" height="52" rx="16" fill="url(#hpg)"/>
+      <rect x="148" y="116" width="14" height="44" rx="7" fill="url(#hpa)"/>
+      <circle cx="168" cy="138" r="8" fill="#212529"/>
+      <circle cx="168" cy="138" r="4" fill="url(#hpa)"/>
+    </g>
+  </g>
+</svg>

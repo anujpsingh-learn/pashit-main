@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sell an Item - PASH.IT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/sell.css" />
+</head>
+<body class="sell-body">
+  <header class="all-listings-header">
+    <a class="header-brand" href="index.html" aria-label="Back to PASH.IT home">
+      <span class="brand-mark">P</span>
+      <span>PASH.IT</span>
+    </a>
+    <nav class="all-listings-nav">
+      <a href="listings.html">Browse Listings</a>
+      <a href="wishlist.html">Wishlists <span id="wishCount">0</span></a>
+      <a href="login.html" id="authLink">Login / Sign Up</a>
+    </nav>
+  </header>
+
+  <main class="sell-page">
+    <section class="sell-shell">
+      <!-- <p class="listing-eyebrow">Post something new</p> -->
+      <h1>Sell an item</h1>
+      <p class="sell-subtitle">Snap a photo, set a price, and campus buyers will find it in minutes.</p>
+
+      <form id="sellForm" class="sell-form">
+        <div class="form-group">
+          <label for="sellTitle">Title</label>
+          <input id="sellTitle" type="text" placeholder="e.g. Study Lamp, barely used" required />
+        </div>
+
+        <div class="form-group">
+          <label for="sellCategory">Category</label>
+          <select id="sellCategory" required>
+            <option value="">Select a category</option>
+            <option value="">Books & Notes</option>
+            <option value="">Electronics</option>
+            <option value="">Hostel Essentials</option>
+            <option value="">Study Setup</option>
+            <option value="">Bikes & Transport</option>
+            <option value="">Sports & Fitness</option>
+            <option value="">Kitchen & Appliances</option>
+            <option value="">Fashion & Accessories</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="sellPrice">Price (₹)</label>
+          <input id="sellPrice" type="number" min="0" step="1" placeholder="e.g. 500" required />
+        </div>
+
+        <div class="form-group">
+          <label for="sellDescription">Description</label>
+          <textarea id="sellDescription" rows="4" placeholder="Condition, age, why you're selling, any details a buyer would want to know."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="sellImages">Photos</label>
+          <input id="sellImages" type="file" accept="image/*" multiple />
+          <div id="imagePreviewRow" class="image-preview-row"></div>
+        </div>
+
+        <button class="sell-submit" type="submit" id="sellSubmitBtn">Post listing</button>
+        <p id="sellMessage" class="sell-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="js/sb-client.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/sell.js"></script>
+</body>
+</html>

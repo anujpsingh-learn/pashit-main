@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile - PASH.IT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/profile.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="auth-body">
+  <header class="auth-header">
+    <a class="header-brand" href="index.html" aria-label="Back to PASH.IT home">
+      <span class="brand-mark">P</span>
+      <span>PASH.IT</span>
+    </a>
+  </header>
+
+  <main class="app-shell">
+    <article id="profile-card" class="profile-card">
+      <section id="profile-banner" class="profile-banner">
+        <img id="profile-banner-image" class="profile-banner-image" alt="" />
+        <label class="upload-control banner-upload" for="banner-upload" aria-label="Change profile banner">
+          <i data-lucide="camera" width="19" height="19"></i>
+        </label>
+        <input id="banner-upload" class="upload-input" type="file" accept="image/*" />
+      </section>
+
+      <div class="profile-content">
+        <section class="profile-avatar" aria-label="Profile picture">
+          <div id="profile-initials" class="profile-avatar-initials">--</div>
+          <img id="profile-avatar-image" class="profile-avatar-image" alt="" />
+          <label class="upload-control avatar-upload" for="avatar-upload" aria-label="Change profile picture">
+            <i data-lucide="camera" width="17" height="17"></i>
+          </label>
+          <input id="avatar-upload" class="upload-input" type="file" accept="image/*" />
+        </section>
+
+        <section id="view-panel" class="mode-panel view-panel">
+          <div class="profile-title-row">
+            <div>
+              <h1 id="profile-name" class="profile-name">Loading...</h1>
+              <p id="profile-email" class="profile-email"></p>
+            </div>
+            <span class="student-chip">Verified Student</span>
+          </div>
+
+          <div class="profile-details">
+            <div class="profile-detail-row">
+              <span class="detail-icon"><i data-lucide="badge-check" width="20" height="20"></i></span>
+              <div>
+                <p class="detail-label">Registration No.</p>
+                <p id="reg-no-value" class="detail-value">—</p>
+              </div>
+            </div>
+            <div class="profile-detail-row">
+              <span class="detail-icon"><i data-lucide="building-2" width="20" height="20"></i></span>
+              <div>
+                <p class="detail-label">Hostel / Block</p>
+                <p id="hostel-value" class="detail-value">—</p>
+              </div>
+            </div>
+          </div>
+
+          <button id="edit-profile-button" class="profile-action" type="button">Edit profile</button>
+          <button class="profile-action profile-logout" type="button" onclick="logOut()">Log out</button>
+        </section>
+
+        <section id="edit-panel" class="mode-panel edit-panel">
+          <div class="edit-panel-inner">
+            <form id="profile-edit-form" class="profile-edit-form">
+              <h2 class="edit-heading">Make it yours</h2>
+              <p class="edit-intro">Keep your marketplace profile clear, recognisable, and campus-ready.</p>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="name-input">Full name</label>
+                  <input id="name-input" class="form-input" type="text" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="hostel-input">Hostel / Block</label>
+                  <input id="hostel-input" class="form-input" type="text" required />
+                </div>
+              </div>
+
+              <div class="edit-form-actions">
+                <button id="cancel-edit-button" class="action-button action-button--secondary" type="button">Cancel</button>
+                <button id="save-profile-button" class="action-button action-button--primary" type="submit">Save changes</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <p id="status-message" class="status-message" role="status"></p>
+      </div>
+    </article>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="js/sb-client.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/profile.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

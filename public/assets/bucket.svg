@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bktg" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#38D9A9"/><stop offset="100%" stop-color="#0CA678"/></linearGradient>
+    <linearGradient id="mugg" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FF8787"/><stop offset="100%" stop-color="#F03E3E"/></linearGradient>
+    <filter id="bsh"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.18"/></filter>
+  </defs>
+  <g filter="url(#bsh)">
+    <path d="M42 90 C42 45 138 45 138 90" fill="none" stroke="#CED4DA" stroke-width="5" stroke-linecap="round"/>
+    <rect x="80" y="46" width="20" height="7" rx="3.5" fill="#343A40"/>
+    <path d="M42 90 L56 168 C57 172 63 175 75 175 L105 175 C117 175 123 172 124 168 L138 90 Z" fill="url(#bktg)"/>
+    <ellipse cx="90" cy="90" rx="48" ry="12" fill="#20C997"/>
+    <ellipse cx="90" cy="89" rx="44" ry="10" fill="#E6FCF5"/>
+    <path d="M47 118 C60 126 120 126 133 118" fill="none" stroke="#099268" stroke-width="3"/>
+    <path d="M51 142 C62 149 118 149 129 142" fill="none" stroke="#099268" stroke-width="3"/>
+    <path d="M158 135 C168 135 168 152 158 152" fill="none" stroke="#C92A2A" stroke-width="4"/>
+    <path d="M134 125 L138 165 C139 168 142 170 148 170 L156 170 C162 170 165 168 166 165 L170 125 Z" fill="url(#mugg)"/>
+    <ellipse cx="152" cy="125" rx="18" ry="5" fill="#FFA8A8"/>
+  </g>
+</svg>
